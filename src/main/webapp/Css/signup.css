@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-weight: bold; 
+}
+
+h2 {
+	color: white;
+}
+
+.sign {
+	background-color:#dee2e6;
+	border-radius:15px;
+	width:350px;
+	height:500px;
+	padding:70px;
+	margin-top:25%;
+	margin-left:25%;
+	text-align:center;
+}
+
+.signup {
+	text-align:center;
+}
+
+.sign-id {
+	width:100%;
+	height:30px;
+	margin-bottom:12px;
+	background-color:white;
+	border:none;
+	border-radius:5px;
+}
+
+.sign-pw {
+	width:100%;
+	height:30px;
+	margin-bottom:15px;
+	background-color:white;
+	border:none;
+	border-radius:5px;
+}
+
+.sign-pw2 {
+	width:100%;
+	height:30px;
+	margin-bottom:15px;
+	background-color:white;
+	border:none;
+	border-radius:5px;
+}
+
+.sign-name {
+	width:100%;
+	height:30px;
+	margin-bottom:15px;
+	background-color:white;
+	border:none;
+	border-radius:5px;
+}
+
+.sign-email {
+	width:100%;
+	height:30px;
+	margin-bottom:15px;
+	background-color:white;
+	border:none;
+	border-radius:5px;
+} 
+
+.submit {
+	border:0;
+	line-height:2;
+	padding:0 13px;
+	margin-bottom:10px;
+	text-align:center;
+	color:blue;
+	border-radius:5px;
+	background-color:gold;
+}
+
+.reset {
+	border:0;
+	line-height:2;
+	padding:0 13px;
+	margin-bottom:10px;
+	text-align:center;
+	color:blue;
+	border-radius:5px;
+	background-color:gold;
+}

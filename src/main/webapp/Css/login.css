@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.form-control{
+	width:300px;
+	margin: 0 auto;
+	margin-top : 30px;
+}
+.tab-content{
+	padding: 100px;
+}
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link{
+	width: 300px;
+}
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link{
+	width:300px;
+}

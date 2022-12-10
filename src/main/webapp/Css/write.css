@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.title-input-group {
+  margin-bottom: 10px;
+}
+
+.form-control.content-textarea {
+  min-height: 300px;
+  margin-bottom: 10px;
+}
+
+.write-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
