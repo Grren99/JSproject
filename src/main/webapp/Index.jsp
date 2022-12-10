@@ -13,6 +13,6 @@ response.sendRedirect("MainServlet?command=Main_list");
 
 %>
 
-
+asdasdasdasdasdasdasdadasdasda
 </body>
 </html>
