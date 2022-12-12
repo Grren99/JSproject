@@ -72,7 +72,7 @@
 										end="10">
 										<c:if test="${category.categoryname == 2}">
 											<div class="link-list">
-												<a class="link-item" href=""> <span
+												<a class="link-item" href="MainServlet?command=Write_view&num=${ category.num}"> <span
 													class="link-item-title">${category.content }</span> <span
 													class="link-item-created">${category.created }</span>
 												</a>
@@ -98,7 +98,7 @@
 										end="10">
 										<c:if test="${category.categoryname == 3}">
 											<div class="link-list">
-												<a class="link-item" href=""> <span
+												<a class="link-item" href="MainServlet?command=Write_view&num=${ category.num}"> <span
 													class="link-item-title">${category.content }</span> <span
 													class="link-item-created">${category.created }</span>
 												</a>
@@ -123,7 +123,7 @@
 										end="10">
 										<c:if test="${category.categoryname == 4}">
 											<div class="link-list">
-												<a class="link-item" href=""> <span
+												<a class="link-item" href="MainServlet?command=Write_view&num=${ category.num}"> <span
 													class="link-item-title">${category.content }</span> <span
 													class="link-item-created">${category.created }</span>
 												</a>
@@ -149,7 +149,7 @@
 										end="10">
 										<c:if test="${category.categoryname == 5}">
 											<div class="link-list">
-												<a class="link-item" href=""> <span
+												<a class="link-item" href="MainServlet?command=Write_view&num=${ category.num}"> <span
 													class="link-item-title">${category.content }</span> <span
 													class="link-item-created">${category.created }</span>
 												</a>
@@ -174,7 +174,7 @@
 										end="10">
 										<c:if test="${category.categoryname == 6}">
 											<div class="link-list">
-												<a class="link-item" href=""> <span
+												<a class="link-item" href="MainServlet?command=Write_view&num=${ category.num}"> <span
 													class="link-item-title">${category.content }</span> <span
 													class="link-item-created">${category.created }</span>
 												</a>

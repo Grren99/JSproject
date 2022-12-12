@@ -22,7 +22,6 @@ public class WriteAction implements Action {
 	public void execute(HttpServletRequest requset, HttpServletResponse response) throws ServletException, IOException {
 		requset.setCharacterEncoding("UTF-8");
 		
-		System.out.println("넘어와짐넘어와짐");
 		CategoryVO cvo = new CategoryVO();
 		String enType = "UTF-8";
 		
@@ -34,7 +33,6 @@ public class WriteAction implements Action {
 		
 //		String path = requset.getSession().getServletContext().getRealPath("/save");
 		
-		System.out.println(path);
 		try{
             multi=new MultipartRequest(
                     requset

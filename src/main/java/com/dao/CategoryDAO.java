@@ -185,8 +185,8 @@ public class CategoryDAO {
 			ps.setString(1, cvo.getTitle());
 			ps.setString(2, cvo.getContent());
 			ps.setString(3, cvo.getName());
-			ps.setInt(4, cvo.getNum());
-			ps.setString(5, cvo.getImage());
+			ps.setString(4, cvo.getImage());
+			ps.setInt(5, cvo.getNum());
 
 			ps.executeUpdate();
 		} catch (Exception e) {

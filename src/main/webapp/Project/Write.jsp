@@ -10,8 +10,8 @@
 <meta name="author" content="" />
 <style>
 .img_write img {
-	width: 243px;
-	margin-right: -5px;
+	width: 220px;
+	margin-right: -30px;
 }
 </style>
 <title></title>
@@ -21,7 +21,7 @@
 
 <form action="MainServlet?command=Write_list" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="command" value="Write_list">
-	<input type="text" name="name" value="${categorylist.categoryname }">
+	<input type="hidden" name="name" value="${categorylist.categoryname }">
 	<div class="d-flex" id="wrapper">
 		<jsp:include page="../Side/siderbar.jsp"></jsp:include>
 		<!-- wrapper -->
@@ -35,11 +35,11 @@
 							잘확인하여 글을 작성 해주세요</h1>
 					</div>
 					<div class="img_write">
-						<img class="category-image" src="Image/게시판작성2.jpeg" /> <img
-							class="category-image" src="Image/게시판작성4.jpeg" /> <img
-							class="category-image" src="Image/게시판작성2.jpeg" /> <img
-							class="category-image" src="Image/게시판작성4.jpeg" /> <img
-							class="category-image" src="Image/게시판작성2.jpeg" />
+						<img class="category-image" src="Image/write2.jpeg" /> <img
+							class="category-image" src="Image/write4.jpeg" /> <img
+							class="category-image" src="Image/write2.jpeg" /> <img
+							class="category-image" src="Image/write4.jpeg" /> <img
+							class="category-image" src="Image/write2.jpeg" />
 					</div>
 				</div>
 				<div class="input-group title-input-group">

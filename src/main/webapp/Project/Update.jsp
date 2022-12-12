@@ -11,16 +11,18 @@
 <meta name="author" content="" />
 <style>
 	.img_update img{
-	width: 243px;
-	margin-right: -5px;
+	width: 220px;
+	margin-right: -30px;
 }
 </style>
 <title></title>
 <!-- Favicon-->
 <!-- Core theme CSS (includes Bootstrap)-->
-<form action="MainServlet" method="post">
+<form action="MainServlet?command=Update_list" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="command" value="Update_list">
 	<input type="hidden" name="num" value="${category.num }">
+	<input type="hidden" name="name" value="${categorylist.categoryname }">
+	<input type="hidden" name="noimage" value="${category.image }">
 	<div class="d-flex" id="wrapper">
 		<jsp:include page="../Side/siderbar.jsp"></jsp:include>
 		<!-- wrapper -->
@@ -34,11 +36,11 @@
 						<p class="category-desc">업데이트 내용의 부적절한 내용이 있을시 제제됩니다</p>
 					</div>
 					<div class="img_update">
-					<img class="category-image" src="Image/업데이트1.jpeg" />
-					<img class="category-image" src="Image/업데이트2.jpeg" />
-					<img class="category-image" src="Image/업데이트1.jpeg" />
-					<img class="category-image" src="Image/업데이트2.jpeg" />
-					<img class="category-image" src="Image/업데이트1.jpeg" />
+					<img class="category-image" src="Image/update1.jpeg" />
+					<img class="category-image" src="Image/update2.jpeg" />
+					<img class="category-image" src="Image/update1.jpeg" />
+					<img class="category-image" src="Image/update2.jpeg" />
+					<img class="category-image" src="Image/update1.jpeg" />
 					</div>
 				</div>
 <%-- 				<c:forEach var="category" items="${cvo }"> --%>
@@ -50,7 +52,7 @@
 				</div>
 				<textarea class="content-textarea form-control"
 					placeholder="내용을 입력해주세요." name="content" style="width: 100%;">${category.content }</textarea>
-					<img src="/JSProject/save/${category.image }" style="width:200px; height: 100px; object-fit: contain;">
+					<input type="file" name="image">
 				<input type="text" class="form-control" name="name"
 					placeholder="종을 입력해 주세요" value="${category.name }">
 <%-- 					</c:forEach> --%>
