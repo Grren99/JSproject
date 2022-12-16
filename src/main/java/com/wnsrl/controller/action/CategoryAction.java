@@ -10,8 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.dao.CategoryDAO;
+import com.dao.CommentDAO;
 import com.dao.UserDAO;
 import com.vo.CategoryVO;
+import com.vo.CommentVO;
 import com.vo.UserVO;
 
 public class CategoryAction implements Action {
@@ -30,13 +32,16 @@ public class CategoryAction implements Action {
 		}
 		//////////////////////
 		
-		
-		System.out.println("dasdsadsada" + categoryname);
 
 		CategoryDAO cdao = CategoryDAO.getinstance();
 		List<CategoryVO> categorylist = cdao.selectAllCategory(categoryname);
 		requset.setAttribute("categorylist", categorylist);
 		requset.setAttribute("categoryname", categoryname);
+		
+		String category_num = requset.getParameter("category_num");
+		CommentDAO comdao = CommentDAO.getinstance();
+		List<CommentVO> commentlist = comdao.getComment(category_num);
+		requset.setAttribute("comment", commentlist);
 
 //		HttpSession session = requset.getSession();
 //		session.setAttribute("cate", categorylist);

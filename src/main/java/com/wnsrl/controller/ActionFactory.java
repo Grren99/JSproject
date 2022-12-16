@@ -2,6 +2,10 @@ package com.wnsrl.controller;
 
 import com.wnsrl.controller.action.Action;
 import com.wnsrl.controller.action.CategoryAction;
+import com.wnsrl.controller.action.CommentUpdateAction;
+import com.wnsrl.controller.action.CommentUpdateFomrAction;
+import com.wnsrl.controller.action.CommentWriteAction;
+import com.wnsrl.controller.action.CommentWriteFormAction;
 import com.wnsrl.controller.action.DeleteAction;
 import com.wnsrl.controller.action.LoginAction;
 import com.wnsrl.controller.action.LoginFormAction;
@@ -45,12 +49,20 @@ public class ActionFactory {
 			action = new WriteFormAction();
 		}else if(command.equals("Write_list")) {
 			action = new WriteAction();
+		}else if(command.equals("Comment_write_form")) {
+			action = new CommentWriteFormAction();
+		}else if(command.equals("Comment_write_list")) {
+			action = new CommentWriteAction();
 		}else if(command.equals("Write_view")) {
 			action = new WriteView();
 		}else if(command.equals("Update_list_form")) {
 			action = new UpdateFormAction();
 		}else if(command.equals("Update_list")) {
 			action = new UpdateAction();
+		}else if(command.equals("Comment_Update_form")) {
+			action = new CommentUpdateFomrAction();
+		}else if(command.equals("Comment_Update")) {
+			action = new CommentUpdateAction();
 		}else if(command.equals("Delete_list")) {
 			action = new DeleteAction();
 		}

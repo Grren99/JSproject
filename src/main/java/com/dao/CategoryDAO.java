@@ -83,7 +83,6 @@ public class CategoryDAO {
 			ps = con.prepareStatement(sql);
 			ps.setInt(1, categoryname);
 			rs = ps.executeQuery();
-			System.out.println("success");
 			while (rs.next()) {
 				CategoryVO cvo = new CategoryVO();
 				cvo.setNum(rs.getInt("num"));
@@ -111,7 +110,6 @@ public class CategoryDAO {
 
 			}
 		}
-
 		return list;
 
 	}
@@ -213,5 +211,5 @@ public class CategoryDAO {
 			DBmanger.close(con, ps);
 		}
 	}
-
+	
 }

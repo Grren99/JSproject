@@ -67,6 +67,5 @@ public class CategoryVO {
 				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 	
-	
 	}
 	

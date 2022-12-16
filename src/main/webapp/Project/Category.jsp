@@ -97,7 +97,6 @@
 						</div>
 					</c:if>
 
-
 					<table class="table">
 						<tr>
 							<th scope="col">번호</th>

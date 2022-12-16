@@ -27,8 +27,11 @@ public class WriteAction implements Action {
 		
 		
 		MultipartRequest multi = null;
+		
 		int maxSize = 10 * 1024 * 1024;
+		
 		ServletContext context = requset.getServletContext();
+		
 		String path = context.getRealPath("upload");
 		
 //		String path = requset.getSession().getServletContext().getRealPath("/save");
