@@ -119,4 +119,22 @@ public class CommentDAO {
 		return cvo;
 	}
 	
+	public void CommentDeleteNum(String num) {
+		String sql = "delete from comment where num=?";
+		Connection con = null;
+		PreparedStatement ps = null;
+		
+		try {
+			con = DBmanger.getConnection();
+			ps = con.prepareStatement(sql);
+			
+			ps.setString(1, num);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBmanger.close(con, ps);
+		}
+	}
+	
 }

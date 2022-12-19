@@ -2,6 +2,7 @@ package com.wnsrl.controller;
 
 import com.wnsrl.controller.action.Action;
 import com.wnsrl.controller.action.CategoryAction;
+import com.wnsrl.controller.action.CommentDeleteAction;
 import com.wnsrl.controller.action.CommentUpdateAction;
 import com.wnsrl.controller.action.CommentUpdateFomrAction;
 import com.wnsrl.controller.action.CommentWriteAction;
@@ -65,6 +66,8 @@ public class ActionFactory {
 			action = new CommentUpdateAction();
 		}else if(command.equals("Delete_list")) {
 			action = new DeleteAction();
+		}else if(command.equals("Comment_delete")) {
+			action = new CommentDeleteAction();
 		}
 			
 		return action;

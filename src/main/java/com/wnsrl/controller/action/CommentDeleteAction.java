@@ -7,26 +7,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dao.CommentDAO;
-import com.vo.CommentVO;
 
-public class CommentUpdateAction implements Action{
+public class CommentDeleteAction implements Action{
 
 	@Override
 	public void execute(HttpServletRequest requset, HttpServletResponse response) throws ServletException, IOException {
-		requset.setCharacterEncoding("UTF-8");
-		CommentVO cvo = new CommentVO();
 		
-		cvo.setNum(Integer.parseInt(requset.getParameter("num")));
-		cvo.setContent(requset.getParameter("content"));
-		
-		requset.setAttribute("comment", cvo);
+		String num = requset.getParameter("num");
 		
 		CommentDAO cdao = CommentDAO.getinstance();
-		cdao.updateCommet(cvo);
+		cdao.CommentDeleteNum(num);
+		
 		
 		response.sendRedirect("MainServlet?command=Comment_Update_form");
-		
-		
-		
+
 	}
 }

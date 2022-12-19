@@ -27,7 +27,7 @@ public class CommentWriteAction implements Action{
 		CommentDAO cdao = CommentDAO.getinstance();
 		cdao.insertComment(cvo);
 		
-		response.sendRedirect("Project/Main.jsp");
+		response.sendRedirect("MainServlet?command=Main_list");
 		
 	}
 }

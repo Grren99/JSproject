@@ -30,7 +30,7 @@
 		<div class="content-wrapper clearfix">
 			<div class="category-top">
 				<div class="category-top-left" style="text-align: center;">
-					<h1 class="category-title">님이 작성하신 게시글 입니다</h1>
+					<h1 class="category-title">${category.username }님이 작성하신 게시글 입니다</h1>
 					<p class="category-desc">욕설 및 비방하는 댓글을 작성시 제제될 수 있습니다.</p>
 				</div>
 				<img class="category-image" src="Image/view.webp"
@@ -84,10 +84,10 @@
 						<input type="button" value="삭제"
 							onclick="location.href='MainServlet?command=Delete_list&num=${category.num}'"
 							class="form-control">
-						<input type="button" value="목록보기"
-							onclick="location.href='MainServlet?command=Category_list'"
-							class="form-control">
+						<input type="button" value="목록보기" class="form-control"
+							onclick="location.href='MainServlet?command=Category_list&categoryname=${category.categoryname}'">
 					</c:when>
+					
 				</c:choose>
 			</div>
 
@@ -98,11 +98,17 @@
 
 
 					<tr><td>
-						<input type="text" name="con" value="${comment.num}" id="aaa">
 						<input type="text" name="commentname"
 							value="작성자 :  ${comment.comname }" readonly="readonly"
-							class="form-control" style="text-align: center"> 
-							<input type="button" name="btn" value="수정" onclick="showPopup('MainServlet?command=Comment_Update_form&num=${comment.num}','update')">
+							class="form-control" style="text-align: center">
+							<c:choose>
+							<c:when test="${ loginuser.name == comment.comname }"> 
+							<input type="button" name="btn" value="수정" class="form-control" onclick="showPopup('MainServlet?command=Comment_Update_form&num=${comment.num}','update')">
+							</c:when>
+							<c:otherwise>
+							
+							</c:otherwise>
+							</c:choose>
 					</tr>
 
 
